@@ -106,6 +106,12 @@ nav {
 .user-icon{
     position: relative;
 }
+.lookIcon  a  :hover{
+    color: var(--maincolor);
+}
+.dropdown-list ul i{
+    padding-right: 15px;
+}
 
 .user-icon:hover+.dropdown-list
 {

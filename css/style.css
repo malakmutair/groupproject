@@ -83,8 +83,55 @@ nav {
     justify-content: space-between;
     gap: 30px;
 }
-.lookIcon a :hover{
+.icon{
+    padding-right: 15px;
+}
+.icon  :hover{
     color: var(--maincolor);
+}
+.user-icon:hover{
+    color: var(--maincolor);
+}
+.user-icon :hover{
+    width: 32px;
+    height: 32px;
+    border-radius: 47%;
+    background-color: var(--mainbakeground);
+    color: white;
+    padding: 7.7px;
+}
+.lookIcon  a  :hover{
+    color: var(--maincolor);
+}
+.dropdown-list ul i{
+    padding-right: 15px;
+}
+.dropdown-list{
+    display: none;
+}
+.user-icon{
+    position: relative;
+}
+.user-icon:hover+.dropdown-list
+{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    right: -1%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 14px;
+    margin-right: 5%;
+    line-height: 36px;
+    padding: 24px 12px 12px 27px;
+    color: white;
+    border-radius: 4px;
+    flex-direction: column;
+    top: 24.6%;
+    z-index: 2;
+    position: absolute;
+    width: 224px;
+    height: 208px;
 }
 .leftnav{
     line-height: 2;
@@ -129,6 +176,7 @@ nav {
 }
 .flashSales h1{
     font-size: 34px;
+    /* padding-right: 5%; */
 }
 .time-heading{
     display: flex;
@@ -388,8 +436,6 @@ nav {
 .categroy-icon .brows-icon:hover {
     background-color: var(--mainbakeground);
     color: white;
-    margin-bottom: 7%;
-    cursor: pointer;
 }
 .brows-icon p{
     text-align: center;
@@ -553,9 +599,9 @@ height: 164px;
 .parfan-img{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 10px; */
     margin-top: 5%;
 }
 .left-side{
@@ -569,7 +615,7 @@ height: 164px;
 .left-side-under{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
 }
